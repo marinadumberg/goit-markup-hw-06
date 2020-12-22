@@ -411,22 +411,35 @@
         <form action="#" class="modal-form">
             <label class="modal-form-field">
                 Имя
+                <span class="modal-form-input-wrapper">
                 <input type="text" name="user-name" class="modal-form-input">
+                <svg class="modal-form-icon">
+                    <use href=".images/sprite2.svg#icon-icon-send"></use>
+                </svg></span>
             </label>
         <label class="modal-form-field">
             Телефон
+            <span class="modal-form-input-wrapper">
             <input type="tel" name="user-tel" class="modal-form-input">
+            <svg class="modal-form-icon">
+                <use href=".images/sprite.svg#icon-phone-black-18dp-1">
+
+            </use></svg></span>
         </label>
         <label class="modal-form-field">
             Почта
+<span class="modal-form-input-wrapper">
             <input type="text" name="user-email" class="modal-form-input">
+            <svg class="modal-form-icon">
+                <use href=".images/sprite.svg#icon-email-black-18dp-1" width="18" height="18">
+                </use></svg></span>
         </label>
         <label class="modal-form-field">
             Коментарий
-            <textarea name="user-message"></textarea>
+            <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
         </label>
-        <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
-        <label class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+        <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy ">
+        <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
         </label>
         <button type="submit" class="modal-form-button">Отправить</button>
         </form>
