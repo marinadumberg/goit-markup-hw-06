@@ -402,12 +402,35 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <b class="modal-form-name">Оставьте свои данные, мы вам перезвоним</b>
             <button type="button" class="close-button" data-modal-close>
             <svg class="button-close-icon">
                 <use href="./images/sprite.svg#close"></use>
             </svg>
         </button>
-        
+        <form action="#" class="modal-form">
+            <label class="modal-form-field">
+                Имя
+                <input type="text" name="user-name" class="modal-form-input">
+            </label>
+        <label class="modal-form-field">
+            Телефон
+            <input type="tel" name="user-tel" class="modal-form-input">
+        </label>
+        <label class="modal-form-field">
+            Почта
+            <input type="text" name="user-email" class="modal-form-input">
+        </label>
+        <label class="modal-form-field">
+            Коментарий
+            <textarea name="user-message"></textarea>
+        </label>
+        <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
+        <label class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+        </label>
+        <button type="submit" class="modal-form-button">Отправить</button>
+        </form>
+    
         </div>
     </div>
 <script src="./js/modal.js"></script>
