@@ -43,6 +43,7 @@ img {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
+  border: none;
 }
 
 .first-button {
@@ -547,6 +548,46 @@ img {
   display: flex;
 }
 
+.sign-wraper {
+  display: flex;
+}
+.sign-us-icon {
+  width: 24px;
+  height: 24px;
+}
+.sign-us-field {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 93px;
+  margin-top: 10px;
+}
+
+.sign-us-btm {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+}
+
+.sign-us-email {
+  min-width: 358px;
+  height: 50px;
+  margin-top: 20px;
+}
+
 /*footer end*/
 
 /*portfolio*/
@@ -796,6 +837,39 @@ img {
 }
 .modal-form-field {
   margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+  margin-top: 40px;
+}
+
+.modal-form-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
 }
 
 .modal-form-input {
@@ -856,11 +930,37 @@ img {
   height: 15px;
   border: 1px solid #000000;
   border-radius: 4px;
+  margin-right: 7px;
+}
+
+.modal-form-policy-text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal-form-policy {
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: #2196f3;
   border: none;
+  background-image: url("../images/icon-check.jpg");
 }
 
-/*backdropend*/
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/*backdropend*/ ;

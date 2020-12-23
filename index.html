@@ -63,7 +63,7 @@
             <div class="container">
         <ul class="dignity-list list container">
             <li>
-                <h2 hidden>Наши достоинства</h2>
+                <h2 class="visually-hidden">Наши достоинства</h2>
                 <div class="dignity-icon-frame">
                 <svg class="dignity-icon" width="70" height="70">
                     <use href="./images/sprite.svg#icon-antenna-1"></use>
@@ -397,8 +397,25 @@
         </a>
     </li>
 </ul>
+</div>
+<div class="sign">
+    <form action="#"class="sign-us">
+        <div class="sign-wraper">
+        <label class="sign-us-field">
+            Подпишитесь на рассылку
+            <input type="text" name="user-email" class="sign-us-email" placeholder="E-mail">
+        </label>
+        
+        <button type="button" class="sign-us-btm">Подписаться
+            <svg class="sign-us-icon">
+                <use href="./images/sprite2.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        </div>
+    </form>
 
-</div></div>
+</div>
+</div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -438,7 +455,7 @@
             Коментарий
             <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
         </label>
-        <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy ">
+        <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy visually-hidden">
         <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
         </label>
         <button type="submit" class="modal-form-button">Отправить</button>
