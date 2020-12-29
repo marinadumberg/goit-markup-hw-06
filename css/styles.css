@@ -551,6 +551,7 @@ img {
 .sign-wraper {
   display: flex;
 }
+
 .sign-us-icon {
   width: 24px;
   height: 24px;
@@ -563,7 +564,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-left: 93px;
+  margin-left: 111px;
   margin-top: 10px;
 }
 
@@ -844,6 +845,10 @@ img {
 .button-close-icon {
   width: 18px;
   height: 18px;
+}
+.close-button:hover .button-close-icon,
+.close-button:focus .button-close-icon {
+  fill: #2196f3;
 }
 
 .is-hidden {
